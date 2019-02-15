@@ -54,6 +54,13 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    background: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,6 +76,12 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      width: 600px;
+    }
 }
 
 .index-h {
@@ -144,7 +157,7 @@ p {
 .middle-about .mid-box button:active {
     background: black;
     color: white;
-    animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s;
 }
 
  @-webkit-keyframes jello-horizontal {
@@ -169,7 +182,7 @@ p {
     100% {
         transform: scale3d(1, 1, 1);
     }
-  
+} 
 
 .middle-content h2 {
     padding: 0 2%;

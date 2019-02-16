@@ -54,6 +54,13 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    background: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,6 +76,12 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      width: 600px;
+    }
 }
 
 .index-h {
@@ -136,8 +149,40 @@ p {
     background: white;
     width: 110px;
     padding: 5px;
+    border: 1px solid black;
     border-radius: 10px;
+    outline: none;
 }
+
+.middle-about .mid-box button:active {
+    background: black;
+    color: white;
+    animation: jello-horizontal 0.9s;
+}
+
+ @-webkit-keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+} 
 
 .middle-content h2 {
     padding: 0 2%;
